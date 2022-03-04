@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 console.log(path.join(__dirname,'front','build'));
 const reactBuild = path.join(__dirname,'front','build');
 app.use(express.static(reactBuild));
-
+//
 
 app.get('/',async(req,res)=>{
     res.send({message:"hello"});
